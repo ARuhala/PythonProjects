@@ -13,6 +13,12 @@ Antti Ruhala, Tampere University of Technology
 Third party python module Pexpect is used to interact with SSH
 http://pexpect. sourceforge.net
 '''
+'''
+this spesific code requires that you know the usernames and passwords
+before hand.
+
+PxsshBruteforce does password "cracking"
+'''
 
 import optparse
 import pxssh
