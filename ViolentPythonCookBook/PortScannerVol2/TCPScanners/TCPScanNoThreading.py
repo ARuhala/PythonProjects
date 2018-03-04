@@ -62,8 +62,9 @@ def main():
     portScan(tgtHost, tgtPorts)
 
 # example terminal run
-# attacker$ python portscanner.py -H 192.168.1.37 -p 21, 22, 80
+# attacker$ python TCPScanNoThreading.py -H 192.168.1.37 -p 21, 22, 80
 # [+] Scan Results for: 192.168.1.37
 # Scanning port 21
-# [+] 21/tcp open [+] 220 FreeFloat Ftp Server (Version 1.00).
+# [+] 21/tcp open
+# [+] 220 FreeFloat Ftp Server (Version 1.00).
 

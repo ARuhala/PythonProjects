@@ -95,7 +95,7 @@ if __name__ == '__main__':
 
 '''
 Example run:
-attacker# python bruteKey.py -H 10.10.13.37 -u root -d dsa/1024
+attacker# python WeakPrivateKeys.py -H 10.10.13.37 -u root -d dsa/1024
 [-] Testing keyfile tmp/002cc1e7910d61712c1aa07d4a609e7d-16764
 [-] Testing keyfile tmp/003d39d173e0ea7ffa7cbcdd9c684375-31965 
 [-] Testing keyfile tmp/003e7c5039c07257052051962c6b77a0-9911 

